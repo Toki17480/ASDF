@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職業介紹</title>
+    <link rel="stylesheet" href="./測試用.css">
+</head>
+<body>
+
+    <div class="section">
+        <!-- 標題 -->
+        <h1 class="title">職業介紹</h1>
+
+        <!-- 分類選單 -->
+        <div class="menu">
+            <span class="menu-item active">冒險家</span>
+            <span class="menu-item">英雄團</span>
+            <span class="menu-item">皇家騎士團</span>
+            <span class="menu-item">末日反抗軍</span>
+            <span class="menu-item">曉之陣</span>
+            <span class="menu-item">超新星</span>
+            <span class="menu-item">雷普族</span>
+            <span class="menu-item">阿尼瑪</span>
+            <span class="menu-item">江湖</span>
+            <span class="menu-item">其他</span>
+        </div>
+
+        <!-- 人物圖片輪播區 -->
+        <div class="carousel-container">
+            <button class="arrow left" onclick="prevSlide()"> <!-- <img src="left-arrow.png" >-->⬅️</button>
+            <div class="carousel">
+                <div class="characters">
+                    <img src="./こより 4.png" alt="角色1" class="character">
+                    <img src="./こより 4.png" alt="角色2" class="character">
+                    <img src="./こより 4.png" alt="角色3" class="character">
+                    <img src="./こより 4.png" alt="角色4" class="character">
+                    <img src="./こより 4.png" alt="角色5" class="character">
+                    <img src="./Lui.png" alt="角色6" class="character"> <!-- 新增的第六張圖片 -->
+                </div>
+            </div>
+            <button class="arrow right" onclick="nextSlide()"><!-- <img src="left-arrow.png" >-->➡️</button>
+        </div>
+    </div>
+
+    <script src="./測試用.js"></script>
+</body>
+</html>

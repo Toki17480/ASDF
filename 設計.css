@@ -1,0 +1,167 @@
+.HoloX1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.HoloX1 img {
+    display: block;
+    max-width: 100%; /* 確保圖片不超出畫面 */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* 讓導航欄跟圖片一樣寬 */
+.navbar {
+    background-color: #001f60;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px; /* 跟圖片設定相同的最大寬度 */
+    width: 100%; /* 讓它根據 max-width 調整 */
+    margin: 0 auto; /* 讓它置中 */
+    box-sizing: border-box;
+}
+
+
+/* 導航欄內的連結 */
+.navbar a {
+    color: white;
+    text-decoration: none; /* 取消底線 */
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* 滑鼠懸停效果 */
+.navbar a:hover {
+    background-color: #003399; /* 較淺的藍色 */
+    border-radius: 5px;
+}
+
+/* 將導航選單與搜尋框分開 */
+.navbar .menu {
+    flex-grow: 1; /* 讓選單展開佔據剩餘空間 */
+}
+
+
+/* 讓文字置中 */
+.title {
+    text-align: center;
+    color: pink;
+}
+
+
+.icon-links {
+    display: flex;
+    gap: 5px; /* 設定間距 */
+}
+
+.icon-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;  /* 固定圖示區塊大小 */
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* 透明背景 */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* 白色邊框 */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.icon-links img {
+    width: 24px; /* 限制圖示大小 */
+    height: 24px;
+}
+
+.icon-links a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* 懸停時加深背景 */
+}
+
+
+
+#reddiv {
+    background-color: #FF0000;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* 旁邊留白 */
+.whiteblock {
+    max-width: 1500px; /* 依照你的圖片寬度調整 */
+    margin: 0 auto; /* 讓區塊置中 */
+    padding: 0 20px; /* 給點內邊距，避免文字緊貼邊緣 */
+    
+}
+
+
+
+.第一區塊{
+    display: flex;  /* 讓內部元素保持並排 */
+    align-items: flex-start; /* 讓兩個區塊從頂部對齊 */
+}
+
+
+.公式介紹文 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 1000px;
+    display: inline-block; /* 讓它不會影響其他區塊 */
+    vertical-align: top;  
+    color: pink;
+    font-size: 40px
+}
+
+.助手君介紹 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 1000px;
+    display: inline-block; /* 讓它不會影響其他區塊 */
+    vertical-align: top; 
+    color: black;
+    font-size: 22px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: #FFF;
+    text-align: center;
+    border: thick solid;
+    border-radius: 10px;
+    border-color: #FFACD3;
+    width: 280px;
+    font-size: 89%;
+    width: 30%; /* 表格縮小一半 */
+    margin-left: auto;
+    margin-right: 0; /* 讓它靠右對齊 */
+}
+
+table,
+th,
+td {
+    border: 1px solid #AC915D;
+    color: white;
+}
+
+th {
+    color: #AC915D;
+}
+
+body{
+    background-image: url("img/backimg.jpg");
+    /* background-repeat: no-repeat; */
+}
+
+.表格主題 {
+    background-color: aqua;
+    color: black;
+    font-size: 18px;
+}
+
+.表格內容 {
+    background-color: white;
+    color: black;
+}

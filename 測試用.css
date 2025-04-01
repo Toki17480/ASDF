@@ -1,0 +1,88 @@
+/* 設定整體背景 */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center/cover;
+    font-family: "Arial", sans-serif;
+}
+
+/* 主要區域 */
+.section {
+    text-align: center;  /* 文字置中 */
+    padding: 20px;  /* 給點內邊距，避免文字緊貼邊緣 */
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    color: white;
+}
+
+/* 主標題 */
+.title {
+    font-size: 2rem;
+    font-weight: bold; /* 粗體 */
+}
+
+/* 選單 */
+.menu {
+    display: flex; /* 使用彈性盒子布局 */
+    justify-content: center;  /* 置中對齊 */
+    gap: 15px;  /* 選單項目之間的間距 */
+    margin-top: 10px;   /* 選單與標題之間的間距 */
+}
+
+.menu-item {
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer; /* 鼠標懸停時變成手型 */
+    position: relative; /* 相對定位，為了下面的下劃線效果 */
+}
+
+.menu-item.active, /* 當前選中的項目 */
+.menu-item:hover {
+    text-decoration: underline; /* 下劃線效果 */
+}
+
+
+
+/* 輪播區塊 */
+.carousel-container {
+    display: flex;
+    align-items: center;   /* 按鈕與圖片保持垂直置中 */
+    justify-content: center;  /* 整個輪播區塊置中顯示 */
+    margin-top: 20px;  /* 與上方內容保持 20px 間距 */
+    gap: 50px;  /* 按鈕與圖片間距為 10px */
+}
+
+/* 左右箭頭 */
+.arrow {
+    background: none;
+    border: none;
+    color: yellow;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* 輪播外框 */
+.carousel {
+    width: 1200px; /* 只顯示 5 張圖片 */
+    overflow: hidden;
+    position: relative;
+}
+
+/* 圖片列 */
+.characters {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 圖片 */
+.character {
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: transform 0.3s;
+    margin: 10px; /* 讓每張圖片周圍都有 10px 的間距 */
+}
+
+.character:hover {
+    transform: scale(1.1);
+}

@@ -84,5 +84,7 @@ body {
 }
 
 .character:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.05); 先取消放大效果*/
+    outline: 5px solid red; /* 增加紅色邊框 */
+  outline-offset: 3px; /* 讓邊框與圖片間隔 */
 }

@@ -10,27 +10,31 @@ body {
 .輪播圖片 {
     text-align: center;  /* 文字置中 */
     padding: 20px;  /* 給點內邊距，避免文字緊貼邊緣 */
-    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    background: rgba(0, 0, 0, 0.85); /* 半透明黑色背景 */
     color: white;
 }
 
 /* 主標題 */
 .服裝介紹 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold; /* 粗體 */
+    margin-top: 10px;  /* 減少上方空間 */
+    margin-bottom: 0px; /* 減少下方空間 */
 }
 
 /* 選單 */
 .服裝分類 {
     display: flex; /* 使用彈性盒子布局 */
     justify-content: center;  /* 置中對齊 */
-    gap: 15px;  /* 選單項目之間的間距 */
-    margin-top: 10px;   /* 選單與標題之間的間距 */
+    gap: 30px;  /* 選單項目之間的間距 */
+    margin-top: 31px;   /* 選單與標題之間的間距 */
+    margin-top: 5px;  /* 減少上方空間 */
+    margin-bottom: 5px; /* 減少下方空間 */
 }
 
 .服裝選項 {
     color: red;
-    font-size: 1.2rem;
+    font-size: 3rem;
     cursor: pointer; /* 鼠標懸停時變成手型 */
     position: relative; /* 相對定位，為了下面的下劃線效果 */
 }
@@ -48,21 +52,19 @@ body {
     align-items: center;   /* 按鈕與圖片保持垂直置中 */
     justify-content: center;  /* 整個輪播區塊置中顯示 */
     margin-top: 20px;  /* 與上方內容保持 20px 間距 */
-    gap: 50px;  /* 按鈕與圖片間距為 10px */
+    gap: 20px;  /* 按鈕與圖片間距為 10px */
 }
 
 /* 左右箭頭 */
 .arrow {
     background: none;
     border: none;
-    color: yellow;
-    font-size: 2rem;
     cursor: pointer;
 }
 
 /* 輪播外框 */
 .圖片輪播區 {
-    width: 1200px; /* 只顯示 5 張圖片 */
+    width: 3200px; /* 只顯示 5 張圖片 */
     overflow: hidden;
     position: relative;
 }
@@ -71,20 +73,31 @@ body {
 .characters {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: max-content; /* 讓它根據內部內容自動展開 */
+    min-width: 100%; /* 確保不會變太小 */
+}
+
+
+/* 角色框框 */
+.character-container {
+    width: 243.5px; /* 限制圖片框的寬度 */
+    height: 580px; /* 限制圖片框的高度 */
+    overflow: hidden; /* 隱藏超出框框的部分 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* 圓角 */
+    border: 3px solid white; /* 白色邊框 */
+    margin: 5px; /* 保持圖片間距 */
 }
 
 /* 圖片 */
 .character {
-    width: 240px;
-    height: 320px;
-    border-radius: 10px;
-    border: 3px solid white;
-    transition: transform 0.3s;
-    margin: 10px; /* 讓每張圖片周圍都有 10px 的間距 */
+    width: 100%; /* 讓圖片填滿框 */
+    height: 100%;
+    object-fit: cover; /* 確保圖片填滿不變形 */
+    transition: transform 0.3s ease-in-out;
 }
 
-.character:hover {
-    /* transform: scale(1.05); 先取消放大效果*/
-    outline: 5px solid red; /* 增加紅色邊框 */
-  outline-offset: 3px; /* 讓邊框與圖片間隔 */
-}
+.character-container:hover .character {
+    transform: scale(1.1);

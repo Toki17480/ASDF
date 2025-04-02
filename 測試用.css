@@ -7,7 +7,7 @@ body {
 }
 
 /* 主要區域 */
-.section {
+.輪播圖片 {
     text-align: center;  /* 文字置中 */
     padding: 20px;  /* 給點內邊距，避免文字緊貼邊緣 */
     background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
@@ -15,35 +15,35 @@ body {
 }
 
 /* 主標題 */
-.title {
+.服裝介紹 {
     font-size: 2rem;
     font-weight: bold; /* 粗體 */
 }
 
 /* 選單 */
-.menu {
+.服裝分類 {
     display: flex; /* 使用彈性盒子布局 */
     justify-content: center;  /* 置中對齊 */
     gap: 15px;  /* 選單項目之間的間距 */
     margin-top: 10px;   /* 選單與標題之間的間距 */
 }
 
-.menu-item {
+.服裝選項 {
     color: red;
     font-size: 1.2rem;
     cursor: pointer; /* 鼠標懸停時變成手型 */
     position: relative; /* 相對定位，為了下面的下劃線效果 */
 }
 
-.menu-item.active, /* 當前選中的項目 */
-.menu-item:hover {
+
+.服裝選項:hover {
     text-decoration: underline; /* 下劃線效果 */
 }
 
 
 
 /* 輪播區塊 */
-.carousel-container {
+.圖片輪播 {
     display: flex;
     align-items: center;   /* 按鈕與圖片保持垂直置中 */
     justify-content: center;  /* 整個輪播區塊置中顯示 */
@@ -61,7 +61,7 @@ body {
 }
 
 /* 輪播外框 */
-.carousel {
+.圖片輪播區 {
     width: 1200px; /* 只顯示 5 張圖片 */
     overflow: hidden;
     position: relative;

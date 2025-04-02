@@ -1,7 +1,7 @@
 let currentIndex = 0; // 目前輪播的位置
 const totalImages = document.querySelectorAll('.character').length; // 總圖片數
 const visibleImages = 5; // 顯示的圖片數
-const imageWidth = 120 + 10; // 圖片寬度 + 間距
+const imageWidth = 1000 + 10; // 圖片寬度 + 間距
 const maxIndex = totalImages - visibleImages; // 允許的最大索引
 
 function updateCarousel() {

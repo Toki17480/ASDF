@@ -10,7 +10,7 @@ body {
 .輪播圖片 {
     text-align: center;  /* 文字置中 */
     padding: 20px;  /* 給點內邊距，避免文字緊貼邊緣 */
-    background: rgba(0, 0, 0, 0.85); /* 半透明黑色背景 */
+    /* background: rgba(0, 0, 0, 0.85); 半透明黑色背景 */
     color: white;
 }
 
@@ -100,4 +100,4 @@ body {
 }
 
 .character-container:hover .character {
-    transform: scale(1.1);
+    transform: scale(1.1);}

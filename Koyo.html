@@ -24,11 +24,12 @@
 </head>
 <body>
     <!-- 放置圖片，並且將為至設至在中間上面 -->
-    <div class="HoloX1">
+    <div class="HoloX1-wrapper"><div class="HoloX1">
         <img src="./Koyo橫幅.jpg" >
-    </div>
+    </div></div>
 
-
+<div class="whiteblock">
+<!-- 藍色橫條 -->
     <nav class="navbar">
         <!-- 選單 -->
         <div class="menu">
@@ -46,34 +47,34 @@
         </div>
     </nav>
 
-
+<!-- 右下角按鈕 -->
     <div class="demo">
         <div id="reddiv"></div>
     </div>
 
     <script src="./互動.js"></script>
 
-
-    <div class="whiteblock">
+<!-- 開頭 -->
+    <div>
         <h1 class="title">こんこよ　
             <br>博衣小夜璃だよ～</br>
         </h1>
-        <p id="主要介紹">博衣小夜璃（博衣 こより／Hakui Koyori），是一名於2021年11月26日開始活動的VTuber，所屬日本業界團體hololive－『秘密結社holoX』的成員。</p>
-        <p id="官方介紹">《秘密結社holoX》的研究家。一面照顧著結社成員、一面進行人類觀察。熱心研究、好奇心旺盛，有時會為了觀察他人反應而惡作劇。自稱是「holoX的大腦」，但實際上她的知識是有所偏差的。</p>
+        <p id="主要介紹">博衣小夜璃（博衣 こより／Hakui Koyori），是一名於2021年11月26日開始活動的VTuber。
+            所屬日本團體Hololive<br>『秘密結社holoX』的研究家。</p>
     </div>
 
-
-    <div class="whiteblock">
+<!-- 中間區塊 -->
+    <div>
         <div class="第一區塊">
             <div>
-                <h1>公式介紹</h1>
+                <h1 id="公式介紹">公式介紹</h1>
                 <p class="公式介紹文">
                 《秘密結社holoX》的研究家。
                 <br>一面照顧著結社成員、一面進行人類觀察。
                 <br>熱心研究、好奇心旺盛，有時會為了觀察他人反應而惡作劇。
                 <br>自稱是「holoX的大腦」，但實際上她的知識是有所偏差的。
                 </p>
-                <h3>助手君眼中的小夜璃</h3>
+                <h2 id="公式介紹">助手君(粉絲)眼中的小夜璃</h2>
                 <p class="助手君介紹">
                     「『ずのー！』是她的口號，是一位頭腦派（？）的研究者。每天進行兩次、甚至三次直播是家常便飯，還曾經『不知不覺間直播了21小時，但體感只有8小時』，堪稱JP最強的直播怪物。
                     <br>此外，她也是個喜歡女孩子、容易不小心越線的**‘頭腦粉紅’**小狼（コヨーテ）。她的ASMR與歌聲既可愛又帶點敏感氛圍，平時說話相當有禮貌，但在遊戲直播中，遇到恐怖遊戲或意外死亡時，會發出驚叫，甚至拍桌子，繼承了這類激情主播的傳統。
@@ -162,57 +163,66 @@
         </div>
 
 
-        <div class="第二區塊">
-            
-
-        </div>
-        
-        <div class="輪播圖片">
-            <!-- 標題 -->
-            <h3 class="服裝介紹">形象、服裝介紹</h3>
-    
-            <!-- 分類選單 -->
-            <div class="服裝分類">
-                <span class="服裝選項">2D服裝</span>
-                <span class="服裝選項">3D服裝</span>
-            </div>
-    
-            <!-- 人物圖片輪播區 -->
-            <div class="圖片輪播">
-                <button class="arrow left" onclick="prevSlide()"> <img src="./左箭頭.png" width="50" height="50"></button>
-                <div class="圖片輪播區">
-                    <div class="characters">
-                        <div class="character-container">
-                            <img src="./測試用.png" alt="角色1" class="character" style="object-position: 80% 90%;">
-                        </div>
-                        <div class="character-container">
-                            <img src="./こより 4.png" alt="角色2" class="character">
-                        </div>
-                        <div class="character-container">
-                            <img src="./こより 4.png" alt="角色3" class="character">
-                        </div>
-                        <div class="character-container">
-                            <img src="./こより 4.png" alt="角色4" class="character">
-                        </div>
-                        <div class="character-container">
-                            <img src="./こより 4.png" alt="角色5" class="character">
-                        </div>
-                        <div class="character-container">
-                            <img src="./Lui.png" alt="角色6" class="character">
-                        </div>
-                    </div>
-                </div>
-                <button class="arrow right" onclick="nextSlide()">\<img src="./右箭頭.png" width="50" height="50"></button>
-            </div>
-        </div>
-    
-        <script src="./測試用.js"></script>
-    
-        <div>
-            <H3 id="title1">介紹Koyori</H3>
-        </div>
 
     </div>
+</div>
+    
+    <div class="blackblock">
+    <div class="輪播圖片">
+        <!-- 標題 -->
+        <h3 class="服裝介紹">形象、服裝介紹</h3>
+
+        <!-- 分類選單 -->
+        <div class="服裝分類">
+            <span class="服裝選項">2D服裝</span>
+            <span class="服裝選項">3D服裝</span>
+        </div>
+
+        <!-- 人物圖片輪播區 -->
+        <div class="圖片輪播">
+            <button class="arrow left" onclick="prevSlide()"> <img src="./左箭頭.png" width="50" height="50"></button>
+            <div class="圖片輪播區">
+                <div class="characters">
+                    <div class="character-container">
+                        <img src="./測試用.png" alt="角色1" class="character" style="object-position: 80% 90%;">
+                    </div>
+                    <div class="character-container">
+                        <img src="./こより 4.png" alt="角色2" class="character">
+                    </div>
+                    <div class="character-container">
+                        <img src="./こより 4.png" alt="角色3" class="character">
+                    </div>
+                    <div class="character-container">
+                        <img src="./こより 4.png" alt="角色4" class="character">
+                    </div>
+                    <div class="character-container">
+                        <img src="./こより 4.png" alt="角色5" class="character">
+                    </div>
+                    <div class="character-container">
+                        <img src="./Lui.png" alt="角色6" class="character">
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" onclick="nextSlide()">\<img src="./右箭頭.png" width="50" height="50"></button>
+        </div>
+    </div>
+
+    <script src="./測試用.js"></script>
+
+    </div>
+
+
+    <div class="whiteblock">
+        <div>
+            <H3 id="title1">介紹Koyori</H3>
+            <nav class="文字認識Koyo">
+                <div class="小標題">
+                    <h4 id="小標題">喜歡的食物</h4>
+                </div>
+            </nav>
+            
+        </div>
+
 
 
 

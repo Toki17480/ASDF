@@ -1,15 +1,38 @@
+
+.HoloX1-wrapper {
+    width: 100%;
+    height: 500px; /* 控制圖片一開始的可見範圍 */
+    overflow: hidden;
+}
+
 .HoloX1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./Koyo橫幅.jpg');
+    /* background-size: cover;
+    background-position: center; */
+    background-repeat: no-repeat; /* 確保圖片不會重複 */
+    z-index: -1; /* 讓內容可以蓋在上面 */
 }
 
 .HoloX1 img {
     display: block;
-    max-width: 100%; /* 確保圖片不超出畫面 */
+    width: 100vw; /* 設定寬度為視口寬度 */
     height: auto;
     margin-bottom: 10px;
+}
+
+
+/* 旁邊留白 */
+.whiteblock {
+    max-width: 1500px; /* 依照你的圖片寬度調整 */
+    margin: 0 auto; /* 讓區塊置中 */
+    padding: 0 20px 0; /* 🔥 增加 `padding-top: 50px;` */
+    background-color: rgb(255, 255, 255,1);
+    position: relative;
 }
 
 /* 讓導航欄跟圖片一樣寬 */
@@ -19,9 +42,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1500px; /* 跟圖片設定相同的最大寬度 */
+    max-width: 1550px; /* 跟圖片設定相同的最大寬度 */
     width: 100%; /* 讓它根據 max-width 調整 */
-    margin: 0 auto; /* 讓它置中 */
+    margin: 150px auto 0; /* 讓 `.navbar` 向下移動 200px */
     box-sizing: border-box;
 }
 
@@ -49,8 +72,13 @@
 /* 讓文字置中 */
 .title {
     text-align: center;
-    color: pink;
+    color: rgb(255, 126, 148);
 }
+
+#主要介紹 {
+    font-size: 30px;
+}
+
 
 
 .icon-links {
@@ -88,13 +116,7 @@
 }
 
 
-/* 旁邊留白 */
-.whiteblock {
-    max-width: 1500px; /* 依照你的圖片寬度調整 */
-    margin: 0 auto; /* 讓區塊置中 */
-    padding: 0 20px; /* 給點內邊距，避免文字緊貼邊緣 */
-    
-}
+
 
 
 
@@ -104,13 +126,24 @@
 }
 
 
+#公式介紹{
+    background-color: black;
+    /* line-height: 1.5; */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #FFF;
+    border-radius: 10px;     /* 設定圓角 */
+    border: 3px solid rgb(136, 218, 229);      /* 設定外框線 */
+}
+
 .公式介紹文 {
     word-wrap: break-word;
     overflow-wrap: break-word;
     max-width: 1000px;
     display: inline-block; /* 讓它不會影響其他區塊 */
     vertical-align: top;  
-    color: pink;
+    color: rgb(255, 126, 148);
     font-size: 40px
 }
 
@@ -167,6 +200,32 @@ body{
 }
 
 
+.blackblock {
+    max-width: 1500px; /* 依照你的圖片寬度調整 */
+    margin: 0 auto; /* 讓區塊置中 */
+    padding: 0 20px; /* 給點內邊距，避免文字緊貼邊緣 */
+    background-color: rgba(0, 0, 0, 0.9);    
+}
+
 #title1 {
-    color: #FF0000;
+    color: #ffffff;
+    background-color: rgb(154, 208, 255);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;     /* 設定圓角 */
+    border: 3px solid rgb(42, 42, 42);      /* 設定外框線 */
+    font-size: 30px;
+}
+
+.小標題{
+    padding: 3px;
+    border-left: #baffde solid 12px;
+    border-bottom: #baffde 1px solid;
+}
+
+#小標題{
+    color: #003399;
+    font-size: 120%;
+
 }

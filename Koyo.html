@@ -176,6 +176,7 @@
         <div class="服裝分類">
             <span class="服裝選項">2D服裝</span>
             <span class="服裝選項">3D服裝</span>
+            <span class="服裝選項">髮型與配件</span>
         </div>
 
         <!-- 人物圖片輪播區 -->
@@ -184,27 +185,44 @@
             <div class="圖片輪播區">
                 <div class="characters">
                     <div class="character-container">
-                        <img src="./測試用.png" alt="角色1" class="character" style="object-position: 80% 90%;">
+                        <img src="./服裝/2D/實驗服.png" alt="角色1" class="character" style="object-position: 75% 10%; " onclick="showDetail(0)">
                     </div>
                     <div class="character-container">
-                        <img src="./こより 4.png" alt="角色2" class="character">
+                        <img src="./服裝/2D/新年.png" alt="角色2" class="character" style="object-position: 75% 10%;" onclick="showDetail(1)">
                     </div>
                     <div class="character-container">
-                        <img src="./こより 4.png" alt="角色3" class="character">
+                        <img src="./服裝/2D/連帽(沒戴帽.png" alt="角色3" class="character" style="object-position: 19% 10%;"onclick="showDetail(2)">
                     </div>
                     <div class="character-container">
-                        <img src="./こより 4.png" alt="角色4" class="character">
+                        <img src="./服裝/2D/泳裝.png" alt="角色4" class="character" style="object-position: 46% 10%;" onclick="showDetail(3)">
                     </div>
                     <div class="character-container">
-                        <img src="./こより 4.png" alt="角色5" class="character">
+                        <img src="./服裝/2D/睡衣.png" alt="角色5" class="character" style="object-position: 50% 10%;" onclick="showDetail(4)">
                     </div>
                     <div class="character-container">
-                        <img src="./Lui.png" alt="角色6" class="character">
+                        <img src="./服裝/2D/制服.png" alt="角色6" class="character" style="object-position: 50% 10%;" onclick="showDetail(5)">
+                    </div>
+                    <div class="character-container">
+                        <img src="./服裝/2D/大衣.png" alt="角色6" class="character" style="object-position: 49% 10%;" onclick="showDetail(6)">
+                    </div>
+                    <div class="character-container">
+                        <img src="./服裝/2D/黑色外套.png" alt="角色6" class="character" style="object-position: 48% 10%;" onclick="showDetail(7)">
                     </div>
                 </div>
             </div>
             <button class="arrow right" onclick="nextSlide()">\<img src="./右箭頭.png" width="50" height="50"></button>
         </div>
+
+        <!-- 彈出視窗設定 -->
+        <div id="character-detail" class="detail-overlay" style="display: none;"><!-- style="display: none:❗️預設不顯示 -->
+            <div class="detail-content">
+              <span class="close-btn" onclick="closeDetail()">✖</span>
+              <img id="detail-img" src="./測試.png" alt="角色大圖">
+              <h2 id="detail-title">角色名稱</h2>
+              <p id="detail-desc">這裡是角色的介紹文字...</p>
+            </div>
+          </div>
+
     </div>
 
     <script src="./測試用.js"></script>
@@ -217,8 +235,97 @@
             <H3 id="title1">介紹Koyori</H3>
             <nav class="文字認識Koyo">
                 <div class="小標題">
-                    <h4 id="小標題">喜歡的食物</h4>
+                    <h4 id="小標題">自我介紹影片</h4>
                 </div>
+
+
+                <a href="https://youtube.com/watch?v=r3Ba-2Y5HDY">
+                <div style="padding-top: 3px;">
+                    <img src="./初配信封面.jpg" alt="初配信" width="50%">
+                    <p>【初配信】スタートまでにTwitterの凍結は溶けるのか！？RTA開始！ふぁいっ！【博衣こより/ホロライブ】</p>
+                </a>
+                </div>
+
+
+                <br>
+
+
+                <div class="小標題">
+                    <h4 id="小標題">喜歡的東西</h4>
+                </div>
+                <dl>
+                    <dt id="文章標題">1.食物</dt>
+                    <dd id="文章內容">
+                        肉、ラーメン、日本酒、白子、蟹、うどん、マヨネーズ、パクチー、カズチー(かずのこチーズ)、アボカド、いぶりがっこクリームチーズ、エリンギ、花椒、美乃滋
+                    </dd>
+                    <dt id="文章標題">2.遊戲</dt>
+                    <dd id="文章內容">
+                        動腦的遊戲（狼人殺、解謎、卡牌遊戲（撲克牌）、麻雀、劇本殺、TRPG）、勇者鬥惡龍、寶可夢系列、尼爾、逆轉裁判系列、彈丸論破系列、賽馬娘
+                    </dd>
+                    <dt id="文章標題">3.漫畫、動漫</dt>
+                    <dd id="文章內容">
+                        超時空要塞F、寒蟬鳴泣之時、機動戰士高達SEED、名偵探柯南、天才麻將少女咲、賽馬娘、東京卍復仇者、權力遊戲、一級玩家、輪到你了、真兇標籤
+                    </dd>
+                    <dt id="文章標題">4.最喜歡的人(最推的人)</dt>
+                    <dd id="文章內容">兔田佩可拉
+                </dl>
+
+
+                <div class="小標題">
+                    <h4 id="小標題">討厭的東西</h4>
+                </div>
+                <dl>
+                    <dt id="文章標題">討厭的東西</dt>
+                    <dd id="文章內容">
+                        恐怖的東西、蟲、力氣、運氣、早上、辣的東西、FPS遊戲、碳酸
+                    </dd>
+                </dl>
+
+
+                <div class="小標題">
+                    <h4 id="小標題">寵物貓</h4>
+                </div>
+                <dl>
+                    <dt id="文章標題">ちいこよ(小Koyo)</dt>
+                    <dd id="文章內容">
+                        配信上の源氏名はちいこよ、スコティッシュフォールドのオス
+                    </dd>
+                </dl>
+
+
+                <div class="小標題">
+                    <h4 id="小標題">粉絲名</h4>
+                </div>
+                <dl>
+                    <dt id="文章標題">小夜璃的助手君</dt>
+                    <dd id="文章內容">
+                        普遍稱為"助手君"
+                        <br>與一般實況主、VTuber不同，很強調前面的"小夜璃的"這點
+                    </dd>
+                </dl>
+
+
+                <!-- 這邊加入雙底線分開 -->
+
+                <div class="小標題">
+                    <h4 id="小標題">常用術語</h4>
+                </div>
+                <table id="術語表格">
+                    <tbody>
+                        <tr>
+                            <th>場合</th>
+                            <th>時機</th>
+                            <th>台詞</th>
+                        </tr>
+
+
+
+                    </tbody>
+
+
+
+                </table>
+
             </nav>
             
         </div>

@@ -209,13 +209,13 @@ body{
 
 #title1 {
     color: #ffffff;
-    background-color: rgb(154, 208, 255);
-    padding-top: 10px;
+    background-color: rgb(71, 71, 71);
+    padding-top: 0px;
     padding-left: 20px;
-    padding-bottom: 10px;
-    border-radius: 10px;     /* 設定圓角 */
-    border: 3px solid rgb(42, 42, 42);      /* 設定外框線 */
-    font-size: 30px;
+    padding-bottom: 0px;
+    /* border-radius: 10px;     設定圓角 */
+    border: 3px solid rgb(0, 145, 255);      /* 設定外框線 */
+    font-size: 45px;
 }
 
 .小標題{
@@ -226,6 +226,23 @@ body{
 
 #小標題{
     color: #003399;
-    font-size: 120%;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
 
+
+#文章標題{
+    font-size: 30px;
+    color: #01ae15;
+    margin-left: 10px;
+    font-weight: 700;
+    position: relative;
+    top: 0px;
+    padding: 10px 7px;
+    margin-bottom: 7px;
+}
+
+#文章內容{
+    font-size: 20px;
 }

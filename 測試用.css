@@ -97,7 +97,63 @@ body {
     height: 100%;
     object-fit: cover; /* 確保圖片填滿不變形 */
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;   /* 滑鼠移上去會變小手 */
 }
 
 .character-container:hover .character {
     transform: scale(1.1);}
+
+
+
+
+    .detail-overlay {
+        position: fixed;   /* 固定定位 */
+        top: 0;
+        left: 0;
+        width: 100%;   /* 讓這個遮罩區塊填滿整個螢幕（整個視窗）*/
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);   /* 半透明黑色背景 */
+        display: flex;   
+        justify-content: center;   /* 水平置中 */
+        align-items: center;   /* 垂直置中 */
+        z-index: 999;   /* 使圖層設定極高位，必定顯示在最上面 */
+      }
+      
+      .detail-content {
+        background: 0,0,0,0;
+        padding: 40px;   /* 內容與邊框間的內距，讓文字和圖片不會貼在邊上 */
+        border-radius: 12px;
+        max-width: 1300px;
+        width: 100%;
+       text-align: center;     /* 內容置中對齊 */
+       position: relative;     /* 讓內部元素（像關閉按鈕）能用 absolute 定位在這個區塊內部 */
+      }
+      
+      .detail-content img {     /* 詳情頁裡的圖片 */
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .close-btn {
+       position: absolute;    /* 定位到 .detail-content 裡的絕對位置（因為上面設了 relative） */
+        top: 10px;
+        right: 15px;      /*  放在視窗右上角，離邊緣一點點距離 */
+        cursor: pointer;   /* 滑鼠移上去會變小手 */
+        font-size: 20px;
+        font-weight: bold;   /* 字體加粗 */
+      }
+
+
+/* 彈出視窗內的介紹文字 */
+      .desc1 {
+        font-size: 25px;
+        color: rgb(246, 255, 0);
+        margin-top: 1px;   /* 與上方圖片的距離 */
+      }
+
+      #detail-title {
+        font-size: 45px;
+        color: #ffffff;
+        margin-top: 1px;   /* 與上方圖片的距離 */
+        margin-bottom: 1px; /* 與下方文字介紹的距離 */
+      }

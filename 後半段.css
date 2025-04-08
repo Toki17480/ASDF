@@ -1,0 +1,79 @@
+#術語表格{
+    border-collapse: collapse; /* 表格的邊框是否合併（collapse）還是分開（separate） */
+    border-spacing: 10px;    /* 儲存格與儲存格之間的間距（格子與格子之間的空隙），只有在 border-collapse: separate; 的時候才有效果！ */
+    background-color: #FFF;
+    width: 1500px;
+    margin-top: 5px;
+    text-align: center;  /* text-align 控制的是「區塊內的文字如何橫向排列」。超常用在表格、標題、段落、圖片等排版 */
+    border: thick solid; /* 加上一條粗的實線邊框 */
+    border-radius: 5px;
+    border-color: #FFACD3;
+
+}
+
+#台詞表格大{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 27px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#台詞表格中{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#台詞表格小{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#中文翻譯{
+    color: blue;
+}
+
+
+
+
+
+.內容容器 {
+    /* 利用flex來分隔div在視窗內的比例，必須先設置"display: flex;"，才能夠使用flex: 2;這種的進行比例分割 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.左區 {
+    flex: 2;
+    /* 或者使用 width: 70%; 也可以 */
+}
+
+.右區 {
+    flex: 1;
+    /* 或者使用 width: 30%; */
+}
+
+#直播介紹表格 {
+    border-collapse: collapse;
+    text-align: center;
+    border: thick solid;
+    border-radius: 10px;
+    border-color: #FFACD3;
+    width: 500px;
+    border-radius: 150px;
+    margin-left: auto;
+    margin-right: 0; /* 讓它靠右對齊 */
+}
+
+#直播介紹表格 td {
+    color: black;
+  }

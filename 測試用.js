@@ -5,7 +5,7 @@ const maxIndex = totalImages - visibleImages; // 允許的最大索引
 
 function updateCarousel() {
     const characters = document.querySelector('.characters');
-    const character = document.querySelector('.character');
+    const character = document.querySelector('.character-container');
     const width = character.offsetWidth;// 單張圖片寬度
     const imageWidth = width + 10; // 單張圖片寬度 + 間距
     characters.style.transform = `translateX(${-currentIndex * imageWidth}px)`;

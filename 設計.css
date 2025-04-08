@@ -30,7 +30,8 @@
 .whiteblock {
     max-width: 1500px; /* 依照你的圖片寬度調整 */
     margin: 0 auto; /* 讓區塊置中 */
-    padding: 0 20px 0; /* 🔥 增加 `padding-top: 50px;` */
+    padding: 50px 20px 0;
+     /* 🔥 增加 `padding-top: 50px;` */
     background-color: rgb(255, 255, 255,1);
     position: relative;
 }
@@ -83,7 +84,8 @@
 
 .icon-links {
     display: flex;
-    gap: 5px; /* 設定間距 */
+    gap: 5px;
+     /* 設定間距 */
 }
 
 .icon-links a {
@@ -202,20 +204,23 @@ body{
 
 .blackblock {
     max-width: 1500px; /* 依照你的圖片寬度調整 */
-    margin: 0 auto; /* 讓區塊置中 */
-    padding: 0 20px; /* 給點內邊距，避免文字緊貼邊緣 */
+    margin: 0 auto;
+     /* 讓區塊置中 */
+    padding: 0 20px;
+     /* 給點內邊距，避免文字緊貼邊緣 */
     background-color: rgba(0, 0, 0, 0.9);    
 }
 
 #title1 {
     color: #ffffff;
     background-color: rgb(71, 71, 71);
-    padding-top: 0px;
+    /* padding-top: 0px; */
     padding-left: 20px;
     padding-bottom: 0px;
     /* border-radius: 10px;     設定圓角 */
     border: 3px solid rgb(0, 145, 255);      /* 設定外框線 */
     font-size: 45px;
+    margin: 0;
 }
 
 .小標題{

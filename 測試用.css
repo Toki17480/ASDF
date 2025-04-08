@@ -9,7 +9,8 @@ body {
 /* 主要區域 */
 .輪播圖片 {
     text-align: center;  /* 文字置中 */
-    padding: 20px;  /* 給點內邊距，避免文字緊貼邊緣 */
+    padding: 20px;
+      /* 給點內邊距，避免文字緊貼邊緣 */
     /* background: rgba(0, 0, 0, 0.85); 半透明黑色背景 */
     color: white;
 }
@@ -51,7 +52,8 @@ body {
     display: flex;
     align-items: center;   /* 按鈕與圖片保持垂直置中 */
     justify-content: center;  /* 整個輪播區塊置中顯示 */
-    margin-top: 20px;  /* 與上方內容保持 20px 間距 */
+    margin-top: 20px; 
+     /* 與上方內容保持 20px 間距 */
     gap: 20px;  /* 按鈕與圖片間距為 10px */
 }
 

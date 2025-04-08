@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>直播連結卡片</title>
+  <style>
+    .直播卡片容器 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-start;
+    }
+
+    .直播卡片 {
+      width: 200px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      text-align: center;
+      background-color: #fff0f6;
+    }
+
+    .直播卡片:hover {
+      transform: translateY(-5px);
+    }
+
+    .直播卡片 img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .直播卡片 a {
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+      display: block;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="直播卡片容器">
+
+  <!-- 卡片 1 -->
+  <div class="直播卡片">
+    <a href="https://www.youtube.com/live/TSzwPniQy04?si=_NFpci7YpZa8aRFa" target="_blank">
+      <img src="./直播連結/第一次ASMR.jpg" alt="第一次ASMR">
+      第一次的ASMR
+    </a>
+  </div>
+
+  <!-- 卡片 2 -->
+  <div class="直播卡片">
+    <a href="https://www.youtube.com/watch?v=你的影片ID" target="_blank">
+      <img src="./直播連結/初次的朝Koyo.jpg" alt="初次的朝Koyo">
+      初次的朝Koyo
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>

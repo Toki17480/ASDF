@@ -62,7 +62,7 @@
     /* 或者使用 width: 30%; */
 }
 
-#直播介紹表格 {
+/* #直播介紹表格 {
     border-collapse: collapse;
     text-align: center;
     border: thick solid;
@@ -72,8 +72,70 @@
     border-radius: 150px;
     margin-left: auto;
     margin-right: 0; /* 讓它靠右對齊 */
-}
 
-#直播介紹表格 td {
+
+/* #直播介紹表格 td {
     color: black;
+    font-size: 20px;
+  } */ 
+
+
+  .直播卡片容器 {
+    display: flex;
+    flex-direction: row;  /* 橫向排列 */
+    gap: 10px;  /* 卡片之間距離 */
+    flex-wrap: wrap;  /* 換行自動排列 */
+    padding: 20px;  /* 避免貼邊 */
+    justify-content: center;  /* 水平置中 */
+    align-items: center;      /* 垂直置中（可選） */
+    padding: 20px;            /* 加點間距避免太貼邊 */
+
+  }
+
+  .直播卡片 {
+    width: 400px;                    /* 固定卡片寬度 */
+    border-radius: 20px;             /* 卡片圓角 */
+    overflow: hidden;                /* 內容超出就隱藏（讓圖片圓角也生效） */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);  /* 卡片陰影 */
+    transition: transform 0.3s;      /* 加入滑動動畫過渡效果 */
+    text-align: center;              /* 文字置中 */
+    background-color: #fff0f6;       /* 卡片背景色（粉嫩風格） */
+    font-size: 20px;                 /* 卡片內文字大小 */
+    margin-bottom: 10px;             /* 卡片與下方的間距 */
+    flex: 0 0 calc(50% - 10px); /* 每張卡片寬度為 50%，扣掉 gap */
+    box-sizing: border-box;     /* 確保 padding 不影響寬度 */
+  }
+  
+
+  .直播卡片:hover {
+    transform: translateY(-5px);     /* 滑鼠移上去會往上浮動一點點 */
+  }
+
+  .直播卡片 img {
+    width: 100%;                    /* 圖片寬度填滿卡片寬度 */
+    height: auto;                   /* 自動等比例縮放 */
+    display: block;                 /* 去掉圖片下方空隙（消除 inline 預設間距） */
+  }
+  
+
+  .直播卡片 a {
+    text-decoration: none;         /* 移除底線 */
+    color: #e91e63;                /* 超連結文字顏色（粉紅色） */
+    font-weight: bold;             /* 粗體字，讓文字更醒目 */
+    display: block;                /* 讓超連結整塊都是可點擊區域 */
+    padding: 20px;                 /* 內邊距，讓點擊範圍更大 */
+  }
+  
+
+
+  .音樂列表{
+    font-size: 20px;
+    margin: 0px auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    text-align: center;
+    /* border: thick solid; */
+    border-radius: 10px;
+    border-color: #FFACD3;
+    width: 100%;
   }

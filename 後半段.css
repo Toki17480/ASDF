@@ -139,3 +139,30 @@
     border-color: #FFACD3;
     width: 100%;
   }
+
+
+
+
+  .blackblock2 {
+    max-width: 1500px; /* 依照你的圖片寬度調整 */
+    margin: 0 auto;
+     /* 讓區塊置中 */
+    padding: 0 20px;
+     /* 給點內邊距，避免文字緊貼邊緣 */
+    background-color: rgba(0, 0, 0, 0.7);    
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between; /* 三個連結分散在左中右 */
+  margin-top: 10px;
+  max-width: 800px; /* 限制連結排版的寬度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-row a {
+  color: rgb(69, 255, 109); /* 和標題顏色一致 */
+  text-decoration: none;
+  font-size: 20px;
+}

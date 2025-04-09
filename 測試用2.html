@@ -1,66 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>直播連結卡片</title>
+  <title>Koyori好可愛</title>
   <style>
-    .直播卡片容器 {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: flex-start;
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+      position: relative;
     }
 
-    .直播卡片 {
-      width: 200px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-      text-align: center;
-      background-color: #fff0f6;
+    .text-container {
+      font-size: 24px;
+      position: relative;
+      display: inline-block;
     }
 
-    .直播卡片:hover {
-      transform: translateY(-5px);
+    .icon {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      position: absolute;
+      bottom: -5px;
+      right: -30px;
+      transition: transform 0.2s;
     }
 
-    .直播卡片 img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .icon:hover {
+      transform: scale(1.2);
     }
 
-    .直播卡片 a {
-      text-decoration: none;
-      color: #e91e63;
-      font-weight: bold;
-      display: block;
-      padding: 10px;
+    /* Modal 視窗樣式 */
+    .modal {
+      display: none; /* 預設隱藏 */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .modal-content iframe {
+      width: 560px;
+      height: 315px;
+      max-width: 100%;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: -10px;
+      margin-right: -10px;
     }
   </style>
 </head>
 <body>
 
-<div class="直播卡片容器">
-
-  <!-- 卡片 1 -->
-  <div class="直播卡片">
-    <a href="https://www.youtube.com/live/TSzwPniQy04?si=_NFpci7YpZa8aRFa" target="_blank">
-      <img src="./直播連結/第一次ASMR.jpg" alt="第一次ASMR">
-      第一次的ASMR
-    </a>
+  <div class="text-container">
+    Koyori好可愛
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon" class="icon" id="openModal">
   </div>
 
-  <!-- 卡片 2 -->
-  <div class="直播卡片">
-    <a href="https://www.youtube.com/watch?v=你的影片ID" target="_blank">
-      <img src="./直播連結/初次的朝Koyo.jpg" alt="初次的朝Koyo">
-      初次的朝Koyo
-    </a>
+  <!-- Modal 視窗 -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <iframe src="https://www.youtube.com/embed/J7Y2im9-0fg" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 
-</div>
+  <script>
+    const modal = document.getElementById("myModal");
+    const openBtn = document.getElementById("openModal");
+    const closeBtn = document.getElementById("closeModal");
+
+    openBtn.addEventListener("click", () => {
+      modal.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // 點擊外部也能關閉
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
 
 </body>
 </html>

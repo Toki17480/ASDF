@@ -1,4 +1,6 @@
 
+
+
 .HoloX1-wrapper {
     width: 100%;
     height: 500px; /* 控制圖片一開始的可見範圍 */
@@ -177,7 +179,7 @@
     border-radius: 10px;
     border-color: #FFACD3;
     width: 280px;
-    font-size: 89%;
+    font-size: 15px;
     width: 30%; /* 表格縮小一半 */
     margin-left: auto;
     margin-right: 0; /* 讓它靠右對齊 */

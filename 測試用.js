@@ -1,7 +1,7 @@
 let currentIndex = 0; // 目前輪播的位置
-const totalImages = document.querySelectorAll('.character').length; // 總圖片數
+let totalImages = document.querySelectorAll('.character').length; // 總圖片數
 const visibleImages = 5; // 顯示的圖片數
-const maxIndex = totalImages - visibleImages; // 允許的最大索引
+let maxIndex = totalImages - visibleImages; // 允許的最大索引
 
 function updateCarousel() {
     const characters = document.querySelector('.characters');
@@ -26,6 +26,91 @@ function prevSlide() {
         updateCarousel();
     }
 }
+
+
+
+// 各分類對應的圖片資料
+const imageMap = {
+    "2D服裝": [
+        { src: "./服裝/2D/實驗服.png", position: "75% 10%" },
+        { src: "./服裝/2D/新年.png", position: "75% 10%" },
+        { src: "./服裝/2D/連帽(沒戴帽.png", position: "19% 10%" },
+        { src: "./服裝/2D/連帽(戴帽.png", position: "50% 10%" },
+        { src: "./服裝/2D/連帽(敞開胸.png", position: "50% 10%" },
+        { src: "./服裝/2D/泳裝.png", position: "46% 10%" },
+        { src: "./服裝/2D/實驗泳裝.png", position: "46% 10%" },
+        { src: "./服裝/2D/睡衣.png", position: "50% 10%" },
+        { src: "./服裝/2D/制服.png", position: "50% 10%" },
+        { src: "./服裝/2D/制服外套.png", position: "47% 10%" },       
+        { src: "./服裝/2D/大衣.png", position: "49% 10%" },
+        { src: "./服裝/2D/黑色外套.png", position: "48% 10%" }
+    ],
+    "3D服裝": [
+        { src: "./服裝/3D/3D.png", position: "45% 10%" },
+        { src: "./服裝/3D/偶像裝1.png", position: "75% 10%" },
+        { src: "./服裝/3D/偶像裝2.png", position: "19% 10%" },
+        { src: "./服裝/3D/偶像裝3.png", position: "46% 10%" },
+        { src: "./服裝/3D/大媽泳裝.png", position: "50% 10%" },
+        { src: "./服裝/3D/泳裝2.png", position: "50% 10%" },
+        { src: "./服裝/3D/聖誕裝1.png", position: "49% 10%" },
+        { src: "./服裝/3D/聖誕裝2.png", position: "49% 10%" },
+        { src: "./服裝/3D/BJ裝.png", position: "49% 10%" },
+        { src: "./服裝/3D/浴衣.png", position: "49% 10%" },
+        { src: "./服裝/3D/earth服裝.png", position: "49% 10%" },
+        { src: "./服裝/3D/練舞裝.png", position: "49% 10%" },
+    ],
+    "髮型與配件": [
+        "./測試用.png",
+        "./測試用.png",
+        "./測試用.png",
+        "./測試用.png",
+        "./測試用.png"
+    ]
+};
+
+// 點擊分類選項後更換圖片
+const options = document.querySelectorAll('.服裝選項');
+const characterContainer = document.querySelector('.characters');
+
+options.forEach(option => {
+    option.addEventListener('click', () => {
+        
+        options.forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+
+        // 設定目前索引歸零
+        currentIndex = 0;
+        updateCarousel();
+
+        // 移除原本圖片
+        characterContainer.innerHTML = '';
+
+        // 加入新圖片
+        const category = option.textContent.trim();
+        const images = imageMap[category] || [];
+
+        images.forEach((item, index) => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'character-container';
+        
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = `角色${index + 1}`;
+            img.className = 'character';
+            img.setAttribute('onclick', `showDetail(${index})`);
+            img.style.objectPosition = item.position || "50% 50%";
+        
+            wrapper.appendChild(img);
+            characterContainer.appendChild(wrapper);
+        });
+
+        // 更新 maxIndex
+        totalImages = images.length;
+        maxIndex = Math.max(totalImages - visibleImages, 0);
+        updateCarousel();
+    });
+});
+
 
 
 
@@ -94,3 +179,7 @@ document.addEventListener("keydown", function(event) {
       closeDetail(); // 呼叫關閉詳情畫面的函式
     }
   });
+
+
+
+  

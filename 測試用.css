@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('background.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.8);
     font-family: "Arial", sans-serif;
 }
 
@@ -43,6 +44,7 @@ body {
 
 .服裝選項:hover {
     text-decoration: underline; /* 下劃線效果 */
+    color: rgb(255, 174, 0);
 }
 
 
@@ -159,3 +161,4 @@ body {
         margin-top: 1px;   /* 與上方圖片的距離 */
         margin-bottom: 1px; /* 與下方文字介紹的距離 */
       }
+

@@ -47,24 +47,25 @@ const imageMap = {
     ],
     "3D服裝": [
         { src: "./服裝/3D/3D.png", position: "45% 10%" },
-        { src: "./服裝/3D/偶像裝1.png", position: "75% 10%" },
-        { src: "./服裝/3D/偶像裝2.png", position: "19% 10%" },
-        { src: "./服裝/3D/偶像裝3.png", position: "46% 10%" },
-        { src: "./服裝/3D/大媽泳裝.png", position: "50% 10%" },
-        { src: "./服裝/3D/泳裝2.png", position: "50% 10%" },
-        { src: "./服裝/3D/聖誕裝1.png", position: "49% 10%" },
-        { src: "./服裝/3D/聖誕裝2.png", position: "49% 10%" },
-        { src: "./服裝/3D/BJ裝.png", position: "49% 10%" },
-        { src: "./服裝/3D/浴衣.png", position: "49% 10%" },
-        { src: "./服裝/3D/earth服裝.png", position: "49% 10%" },
-        { src: "./服裝/3D/練舞裝.png", position: "49% 10%" },
+        { src: "./服裝/3D/偶像裝1.png", position: "50% 10%" },
+        { src: "./服裝/3D/偶像裝2.png", position: "57% 10%" },
+        { src: "./服裝/3D/偶像裝3.png", position: "54% 10%" },
+        { src: "./服裝/3D/大媽泳裝.png", position: "47% 10%" },
+        { src: "./服裝/3D/泳裝2.png", position: "92% 10%" },
+        { src: "./服裝/3D/聖誕裝1.png", position: "55% 10%" },
+        { src: "./服裝/3D/聖誕裝2.png", position: "58% 10%" },
+        { src: "./服裝/3D/BJ裝.png", position: "55% 10%" },
+        { src: "./服裝/3D/浴衣.png", position: "90% 10%" },
+        { src: "./服裝/3D/earth服裝.png", position: "70% 10%" },
+        { src: "./服裝/3D/練舞裝.png", position: "55% 10%" },
     ],
     "髮型與配件": [
-        "./測試用.png",
-        "./測試用.png",
-        "./測試用.png",
-        "./測試用.png",
-        "./測試用.png"
+        { src: "./服裝/髮型跟配件/辮子.png", position: "71% 10%" },
+        { src: "./服裝/髮型跟配件/雙馬尾.png", position: "50% 10%" },
+        { src: "./服裝/髮型跟配件/短髮.png", position: "68% 10%" },
+        { src: "./服裝/髮型跟配件/助手君.png", position: "75% 10%" },
+        { src: "./服裝/髮型跟配件/眼鏡.png", position: "55% 10%" },
+        { src: "./服裝/髮型跟配件/手把.png", position: "70% 10%" },
     ]
 };
 
@@ -182,4 +183,21 @@ document.addEventListener("keydown", function(event) {
 
 
 
-  
+  const modal = document.getElementById("myModal");
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // 點擊外部也能關閉
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });

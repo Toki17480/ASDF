@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./測試用.css">
     <link rel="stylesheet" href="./後半段.css">
     <style>
-        /* 10. 將 #reddiv 固定在右下角，並且顯示圖片 */
+        /* 10. 將 #reddiv 回首頁按鈕固定在右下角，並且顯示圖片 */
         #reddiv {
             position:fixed;
             right: 0;
@@ -21,13 +21,8 @@
             background-color: transparent;
             cursor: pointer; /* 讓滑鼠移到圖片上時，滑鼠變成手指狀態 */
         }
-        .text-container {
-      font-size: 24px;
-      position: relative;
-      display: inline-block;
-    }
 
-    .icon {
+    /* .icon {
       width: 24px;
       height: 24px;
       cursor: pointer;
@@ -39,11 +34,11 @@
 
     .icon:hover {
       transform: scale(1.2);
-    }
+    } */
 
     /* Modal 視窗樣式 */
-    .modal {
-      display: none; /* 預設隱藏 */
+    /* .modal {
+      display: none; 預設隱藏 
       position: fixed;
       top: 0;
       left: 0;
@@ -74,7 +69,7 @@
       font-size: 18px;
       margin-top: -10px;
       margin-right: -10px;
-    }
+    } */
     </style>
 </head>
 <body>
@@ -817,40 +812,6 @@
         <a href="https://zh.wikipedia.org/zh-tw/%E5%8D%9A%E8%A1%A3%E5%8F%AF%E4%BD%91%E7%90%86">維基百科</a>
         <a href="https://seesaawiki.jp/hololivetv/d/%c7%ee%b0%e1%a4%b3%a4%e8%a4%ea">seesaa wiki</a>
         <a href="https://zh.moegirl.org.cn/zh-tw/%E5%8D%9A%E8%A1%A3%E5%B0%8F%E5%A4%9C%E7%92%83">萌娘百科</a>
-        <div class="text-container">
-            Koyori好可愛
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon" class="icon" id="openModal">
-          </div>
-        
-          <!-- Modal 視窗 -->
-          <div class="modal" id="myModal">
-            <div class="modal-content">
-              <span class="close-btn" id="closeModal">&times;</span>
-              <iframe src="https://www.youtube.com/embed/J7Y2im9-0fg" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        
-          <script>
-            const modal = document.getElementById("myModal");
-            const openBtn = document.getElementById("openModal");
-            const closeBtn = document.getElementById("closeModal");
-        
-            openBtn.addEventListener("click", () => {
-              modal.style.display = "flex";
-            });
-        
-            closeBtn.addEventListener("click", () => {
-              modal.style.display = "none";
-            });
-        
-            // 點擊外部也能關閉
-            window.addEventListener("click", (e) => {
-              if (e.target === modal) {
-                modal.style.display = "none";
-              }
-            });
-          </script>
-        
         </div>
     
 

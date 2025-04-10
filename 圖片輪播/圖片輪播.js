@@ -129,12 +129,27 @@ const characterDetails = [
         desc: '<span class="desc1"><a href="https://www.youtube.com/live/cuOcGQdY9KE?si=jaGfw6ci-y48BkGQ" target="_blank">【#ホロライブ正月衣装】可愛すぎて失神注意♡【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
     },
     {
-        name: "連帽衫",
+        name: "連帽衫(沒帽子)",
+        image: "./測試.png",
+        desc: '<span class="desc1"><a href="https://www.youtube.com/live/eB-cI-PTOtI?si=DfA0avfmbfrvCsmr" target="_blank">【 #博衣こより新衣装 】初めての新衣装お披露目！3段階の変化…⁉えっっっ⁉【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
+    },
+    {
+        name: "連帽衫(戴帽子)",
+        image: "./測試.png",
+        desc: '<span class="desc1"><a href="https://www.youtube.com/live/eB-cI-PTOtI?si=DfA0avfmbfrvCsmr" target="_blank">【 #博衣こより新衣装 】初めての新衣装お披露目！3段階の変化…⁉えっっっ⁉【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
+    },
+    {
+        name: "連帽衫(敞開胸)",
         image: "./測試.png",
         desc: '<span class="desc1"><a href="https://www.youtube.com/live/eB-cI-PTOtI?si=DfA0avfmbfrvCsmr" target="_blank">【 #博衣こより新衣装 】初めての新衣装お披露目！3段階の変化…⁉えっっっ⁉【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
     },
     {
         name: "泳裝",
+        image: "./測試.png",
+        desc: '<span class="desc1"><a href="https://www.youtube.com/live/eB-cI-PTOtI?si=DfA0avfmbfrvCsmr" target="_blank">【 #博衣こより新衣装 】初めての新衣装お披露目！3段階の変化…⁉えっっっ⁉【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
+    },
+    {
+        name: "實驗袍泳裝",
         image: "./測試.png",
         desc: '<span class="desc1"><a href="https://www.youtube.com/live/eB-cI-PTOtI?si=DfA0avfmbfrvCsmr" target="_blank">【 #博衣こより新衣装 】初めての新衣装お披露目！3段階の変化…⁉えっっっ⁉【博衣こより/ホロライブ】</a></span>'      // desc = description（描述、介紹）
     },
@@ -145,6 +160,11 @@ const characterDetails = [
     },
     {
         name: "制服",
+        image: "./測試.png",
+        desc: '<span class="desc1"><a href="https://www.youtube.com/live/nJo4w9ceTK8?si=VQSxECghuqEJwi7f" target="_blank">【 #博衣こより新衣装 】1億年ぶり2回目の新衣装！！！！！遂にアレが・・・くるぞ・・・！！</a></span>'      // desc = description（描述、介紹）
+    },
+    {
+        name: "制服外套",
         image: "./測試.png",
         desc: '<span class="desc1"><a href="https://www.youtube.com/live/nJo4w9ceTK8?si=VQSxECghuqEJwi7f" target="_blank">【 #博衣こより新衣装 】1億年ぶり2回目の新衣装！！！！！遂にアレが・・・くるぞ・・・！！</a></span>'      // desc = description（描述、介紹）
     },

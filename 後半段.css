@@ -42,7 +42,7 @@
 
 
 
-
+/* 連結卡片 */
 
 .內容容器 {
     /* 利用flex來分隔div在視窗內的比例，必須先設置"display: flex;"，才能夠使用flex: 2;這種的進行比例分割 */
@@ -59,26 +59,7 @@
 
 .右區 {
     flex: 1;
-    /* 或者使用 width: 30%; */
 }
-
-/* #直播介紹表格 {
-    border-collapse: collapse;
-    text-align: center;
-    border: thick solid;
-    border-radius: 10px;
-    border-color: #FFACD3;
-    width: 500px;
-    border-radius: 150px;
-    margin-left: auto;
-    margin-right: 0; /* 讓它靠右對齊 */
-
-
-/* #直播介紹表格 td {
-    color: black;
-    font-size: 20px;
-  } */ 
-
 
   .直播卡片容器 {
     display: flex;
@@ -140,9 +121,23 @@
     width: 100%;
   }
 
+.音樂列表 th{
+  border: 1px solid #FFACD3;
+  padding: 10px;
+  font-size: 30px;
+
+}
+.音樂列表 td {
+  border: 1px solid #FFACD3;
+  padding: 1px;
+  color: black;
+  font-size: 20px;
+}
 
 
 
+
+/* 最底下的補充連結 */
   .blackblock2 {
     max-width: 1500px; /* 依照你的圖片寬度調整 */
     margin: 0 auto;

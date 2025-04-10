@@ -6,7 +6,7 @@
     <title>介紹Koyori</title>
     <link rel="icon" href="./icon.svg">
     <link rel="stylesheet" href="./設計.css">
-    <link rel="stylesheet" href="./測試用.css">
+
     <link rel="stylesheet" href="./後半段.css">
     <style>
         /* 10. 將 #reddiv 回首頁按鈕固定在右下角，並且顯示圖片 */
@@ -83,10 +83,11 @@
     <nav class="navbar">
         <!-- 選單 -->
         <div class="menu">
-            <a href="#">服裝一覽</a>
-            <a href="#">重大直播</a>
-            <a href="#">關聯用語</a>
-            <a href="#">歌曲</a>
+            <a href="#介紹">介紹</a>
+            <a href="#形象">形象、服裝介紹</a>
+            <a href="#深入">深入了解Koyori</a>
+            <a href="#直播">直播相關</a>
+            <a href="#音樂">音樂</a>
         </div>
 
         <!-- 圖示連結 -->
@@ -106,7 +107,7 @@
 
 <!-- 開頭 -->
     <div>
-        <h1 class="title">こんこよ　
+        <h1 class="title" id="介紹">こんこよ　
             <br>博衣小夜璃だよ～</br>
         </h1>
         <p id="主要介紹">博衣小夜璃（博衣 こより／Hakui Koyori），是一名於2021年11月26日開始活動的VTuber。
@@ -219,8 +220,10 @@
     </div>
 </div>
     
+<!-- 圖片輪播區 -->
+<link rel="stylesheet" href="./圖片輪播/圖片輪播.css">
     <div class="blackblock">
-    <div class="輪播圖片">
+    <div class="輪播圖片" id="形象">
         <!-- 標題 -->
         <h3 class="服裝介紹">形象、服裝介紹</h3>
 
@@ -246,31 +249,31 @@
                         <img src="./服裝/2D/連帽(沒戴帽.png" alt="角色3" class="character" style="object-position: 19% 10%;"onclick="showDetail(2)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/連帽(戴帽.png" alt="角色3" class="character" style="object-position: 50% 10%;"onclick="showDetail(2)">
+                        <img src="./服裝/2D/連帽(戴帽.png" alt="角色3" class="character" style="object-position: 50% 10%;"onclick="showDetail(3)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/連帽(敞開胸.png" alt="角色3" class="character" style="object-position: 50% 10%;"onclick="showDetail(2)">
+                        <img src="./服裝/2D/連帽(敞開胸.png" alt="角色3" class="character" style="object-position: 50% 10%;"onclick="showDetail(4)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/泳裝.png" alt="角色4" class="character" style="object-position: 46% 10%;" onclick="showDetail(3)">
+                        <img src="./服裝/2D/泳裝.png" alt="角色4" class="character" style="object-position: 46% 10%;" onclick="showDetail(5)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/實驗泳裝.png" alt="角色4" class="character" style="object-position: 46% 10%;" onclick="showDetail(3)">
+                        <img src="./服裝/2D/實驗泳裝.png" alt="角色4" class="character" style="object-position: 46% 10%;" onclick="showDetail(6)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/睡衣.png" alt="角色5" class="character" style="object-position: 50% 10%;" onclick="showDetail(4)">
+                        <img src="./服裝/2D/睡衣.png" alt="角色5" class="character" style="object-position: 50% 10%;" onclick="showDetail(7)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/制服.png" alt="角色6" class="character" style="object-position: 50% 10%;" onclick="showDetail(5)">
+                        <img src="./服裝/2D/制服.png" alt="角色6" class="character" style="object-position: 50% 10%;" onclick="showDetail(8)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/制服外套.png" alt="角色6" class="character" style="object-position: 47% 10%;" onclick="showDetail(5)">
+                        <img src="./服裝/2D/制服外套.png" alt="角色6" class="character" style="object-position: 47% 10%;" onclick="showDetail(9)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/大衣.png" alt="角色6" class="character" style="object-position: 49% 10%;" onclick="showDetail(6)">
+                        <img src="./服裝/2D/大衣.png" alt="角色6" class="character" style="object-position: 49% 10%;" onclick="showDetail(10)">
                     </div>
                     <div class="character-container">
-                        <img src="./服裝/2D/黑色外套.png" alt="角色6" class="character" style="object-position: 48% 10%;" onclick="showDetail(7)">
+                        <img src="./服裝/2D/黑色外套.png" alt="角色6" class="character" style="object-position: 48% 10%;" onclick="showDetail(11)">
                     </div>
                 </div>
             </div>
@@ -289,15 +292,15 @@
 
     </div>
 
-    <script src="./測試用.js"></script>
+    <script src="./圖片輪播/圖片輪播.js"></script>
 
     </div>
 
 
     <div class="whiteblock1">
         <div>
-            <h3 id="title1">介紹Koyori</h3>
-            <nav class="文字認識Koyo">
+            <h3 id="title1">深入認識Koyori</h3>
+            <nav class="文字認識Koyo" id="深入">
                 <div class="小標題">
                     <h4 id="小標題">自我介紹影片</h4>
                 </div>
@@ -436,18 +439,12 @@
             </nav>
             
 
-            <H3 id="title1">直播相關</H3>
+    <H3 id="title1">直播相關</H3>
 
-
-            
-
-
-
-        
     <div class="內容容器">
             <!-- 左邊文字區塊 -->
         <div class="左區">
-            <div class="小標題">
+            <div class="小標題" id="直播">
                 <h4 id="小標題">直播特徵</h4>
             </div>
 
@@ -614,7 +611,7 @@
 
     <div>
         <H3 id="title1">音樂</H3>
-        <div class="小標題">
+        <div class="小標題" id="音樂">
             <h4 id="小標題">原創曲</h4>
         </div>
         <table class="音樂列表">
@@ -625,10 +622,10 @@
                 <th>歌曲連結</th>
             </tr>
             <tr>
-                <th>Wao</th>
-                <th>2022年6月16日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                <td>Wao</td>
+                <td>2022年6月16日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/Mt5SB2igQUM?si=LaPIJ7Hj8GGb0f4x" target="_blank">
@@ -636,13 +633,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>乙女よ求めよQ.E.D. </th>
-                <th>2022年12月30日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                <td>乙女よ求めよQ.E.D. </td>
+                <td>2022年12月30日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/kvmDTbmal64?si=3Nd20J_M-81ZMLEi" target="_blank">
@@ -650,12 +647,12 @@
                     </a>
                         </div>
                     </div>
-                </th>
+                </td>
             </tr><tr>
-                <th>史上最大のQUESTION!</th>
-                <th>2023年5月4日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                <td>史上最大のQUESTION!</td>
+                <td>2023年5月4日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/xCFu0P7GTWw?si=9KSuA67uURmGaKi8" target="_blank">
@@ -663,12 +660,12 @@
                     </a>
                         </div>
                     </div>
-                </th>
+                </td>
             </tr><tr>
-                <th>エゴイスティック・シーソー </th>
-                <th>2023年3月15日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                <td>エゴイスティック・シーソー </td>
+                <td>2023年3月15日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/PIK13uH30gg?si=bw9AKzv1nP5AXbxF" target="_blank">
@@ -676,12 +673,12 @@
                     </a>
                         </div>
                     </div>
-                </th>
+                </td>
             </tr><tr>
-                <th>アンバランス</th>
-                <th>2023年11月28日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                <td>アンバランス</td>
+                <td>2023年11月28日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/FLCs_rT8iKI?si=w8T-9IxxqQuX48Sa" target="_blank">
@@ -689,12 +686,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>Tear-Gazer</th>
-                <th>2024年3月15日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>Tear-Gazer</td>
+                <td>2024年3月15日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/_QIQk3StRmc?si=84Yc07hRS7elhwO1" target="_blank">
@@ -702,12 +700,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>!!!Dream♡Cooking!!!</th>
-                <th>2024年2月25日</th>
-                <th>「日清U.F.O炒麵」聯動歌曲</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>!!!Dream♡Cooking!!!</td>
+                <td>2024年2月25日</td>
+                <td>「日清U.F.O炒麵」聯動歌曲</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/YpAa5ZytTQc?si=r-ILRMR3yJcODIkG" target="_blank">
@@ -715,12 +714,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>New Journey</th>
-                <th>2024年3月15日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>New Journey</td>
+                <td>2024年3月15日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/Q30q9XR6DRA?si=eIwrjnKkBmx4MJDp" target="_blank">
@@ -728,12 +728,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>デコレート</th>
-                <th>2024年11月28日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>デコレート</td>
+                <td>2024年11月28日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/xIpIbc7IEWo?si=Ph0gutBA52Ns7FPm" target="_blank">
@@ -741,12 +742,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>シアワセ√コヨリニウム</th>
-                <th>2024年12月30日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>シアワセ√コヨリニウム</td>
+                <td>2024年12月30日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/MG8f167W8RM?si=u36mxbTJRGbVrWF3" target="_blank">
@@ -754,12 +756,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>キミ＝♡</th>
-                <th>2025年3月15日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>キミ＝♡</td>
+                <td>2025年3月15日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/-NjjaUG0CFc?si=W6hH3a3g0CC52zH2" target="_blank">
@@ -767,12 +770,13 @@
                     </a>
                         </div>
                     </div>
-                </th>
-            </tr><tr>
-                <th>Dear you 128√e980</th>
-                <th>2025年3月14日</th>
-                <th>收錄於個人專輯《FIRST STEP》</th>
-                <th>
+                </td>
+            </tr>
+            <tr>
+                <td>Dear you 128√e980</td>
+                <td>2025年3月14日</td>
+                <td>收錄於個人專輯《FIRST STEP》</td>
+                <td>
                     <div class="直播卡片容器">
                         <div class="直播卡片">
                     <a href="https://youtu.be/1Jvi9T0r4aw?si=x1a_sCdbKb7Xxlpt" target="_blank">
@@ -780,7 +784,7 @@
                     </a>
                         </div>
                     </div>
-                </th>
+                </td>
             </tr>
 
 

@@ -7,11 +7,20 @@ body {
     font-family: "Arial", sans-serif;
 }
 
+/* 黑色背景 */
+.blackblock {
+    max-width: 1500px; /* 依照你的圖片寬度調整 */
+    margin: 0 auto;
+     /* 讓區塊置中 */
+    padding: 0 20px;
+     /* 給點內邊距，避免文字緊貼邊緣 */
+    background-color: rgba(0, 0, 0, 0.9);    
+}
+
 /* 主要區域 */
 .輪播圖片 {
     text-align: center;  /* 文字置中 */
-    padding: 20px;
-      /* 給點內邊距，避免文字緊貼邊緣 */
+    padding: 20px;      /* 給點內邊距，避免文字緊貼邊緣 */
     /* background: rgba(0, 0, 0, 0.85); 半透明黑色背景 */
     color: white;
 }
